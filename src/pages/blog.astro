@@ -1,6 +1,7 @@
 ---
 import '../styles/global.css';
 import Header from '../components/Header.astro';
+import Hamburger from '../components/Hamburger.astro';
 
 const pageTitle = "私のAstro学習ブログ";
 ---
@@ -14,6 +15,7 @@ const pageTitle = "私のAstro学習ブログ";
 		<title>{pageTitle}</title>
 	</head>
 	<body>
+		<Hamburger />
         <Header />
 
 		<h1>{pageTitle}</h1>
@@ -24,4 +26,7 @@ const pageTitle = "私のAstro学習ブログ";
       		<li><a href="/posts/post-3/">Post 3</a></li>
     	</ul>
 	</body>
+	<script>
+    import "../scripts/menu.js";
+  </script>
 </html>
